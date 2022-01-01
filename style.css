@@ -1,0 +1,151 @@
+*{
+    padding: 0ppx;
+    margin: 0px;
+}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+  z-index: -1;
+}
+.left p {
+color: red;
+}
+/* Control the right side */
+.right {
+  right: 0;
+  z-index: -1;
+  background-color: red;
+}
+.right p {
+  color: black;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 300px;
+}
+.updown{
+animation: TopBottomShake 20s infinite;
+}
+@keyframes TopBottomShake {
+    0%,100%{-webkit-transform:translateY(0);transform:translateY(0)}
+    10%,30%,50%,70%,90%{-webkit-transform:translateY(-5px);transform:translateY(-5px)}
+    20%,40%,60%,80%{-webkit-transform:translateY(1px);transform:translateY(1px)}
+    }
+.logo {
+  display: inline-block;
+  margin-top: -55px;
+  margin-left: 10px;
+  size: 20px;
+}
+h1 {
+  font-size: 20px;
+  font-style: revert;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+.copy-rt {
+  background: rgba(0,0,0,0.7);
+  color: #c8c8c8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 65px;
+  padding: -2px 0 10px;
+  font-size: 11px;
+  z-index: -1;
+  width: 100%;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  font-family: fantasy;
+}
+ 
+
+  
+  h3 {
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top:5px;
+  }
+ h3 {
+    line-height: 22px;
+}
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #btn1 {
+    top: 120px;
+  }
+  
+  #btn3 {
+    top: 320px;
+  }
+  
+  #btn4 {
+    top: 420px;
+  }
+
+  #btn5 {
+    top:220px;
+  }
+  div.button {
+    background-color: #ff0000a8;
+    color: #2c3e50;
+    border: none;
+    border-radius: 30px;
+    width: 500px;
+    height: 60px;
+    position: fixed;
+    left: -435px;
+    transition: .7s ease;
+  }
+  
+  div.button:hover {
+    background-color: #ffffff;
+    position: fixed;
+    left: -50px;
+    width: 600px;
+    border-radius: 0px;
+    box-shadow: 0px 5px 0px #c0392b;
+  }
+  
+  div.button:active {
+    background-color: #2c3e50;
+    transition: 0s;
+    color: #ecf0f1;
+  }
+.firstbg {
+  background-color: black;
+  color:white;
+  font-family: sans-serif;
+  border-radius: 8px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
